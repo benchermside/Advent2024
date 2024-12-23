@@ -1,4 +1,4 @@
-data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\2\\in.txt").read()
+data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\gitHub\\Advent2024\\2\\in.txt").read()
 splitData = data.split("\n")
 for i in range(len(splitData)):
     splitData[i] = splitData[i].split(" ")

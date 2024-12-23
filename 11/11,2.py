@@ -1,4 +1,4 @@
-data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\11\\in.txt").read()
+data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\gitHub\\Advent2024\\11\\in.txt").read()
 data = data.split(" ")
 rockClasifications = {}
 for i in range(len(data)):

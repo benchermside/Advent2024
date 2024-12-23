@@ -1,4 +1,4 @@
-data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\10\\in.txt").read()
+data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\gitHub\\Advent2024\\10\\in.txt").read()
 data = data.split("\n")
 
 def integMake(data):

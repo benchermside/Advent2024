@@ -1,4 +1,4 @@
-data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\3\\in.txt").read()
+data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\gitHub\\Advent2024\\3\\in.txt").read()
 #print(len(data))
 answer = 0
 for i in range(len(data)):

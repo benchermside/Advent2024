@@ -1,6 +1,6 @@
 from math import gcd
 
-data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\13\\in.txt").read()
+data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\gitHub\\Advent2024\\13\\in.txt").read()
 data = data.split("\n\n")
 
 def addTouples(touple1, touple2):

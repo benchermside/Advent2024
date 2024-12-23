@@ -1,8 +1,8 @@
-data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\9\\in.txt").read()
+data = open("C:\\Users\\bcher\\OneDrive\\Desktop\\programs\\advent2024\\gitHub\\Advent2024\\9\\in.txt").read()
 
 def sumIntervol(numL, numH):
     numL = numL - 1
-    numH = numH - 1
+    numH = numH - 9
     return ((numH*numH + numH)//2)-((numL*numL+numL)//2)
     
 
