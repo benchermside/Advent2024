@@ -49,8 +49,6 @@ for Y in range(len(grid)):
             robotPos = (Y, X)
 
 GetVector = {"<": (0, -1), ">":(0,1), "^":(-1,0),"v":(1,0)}
-rotateVectorLeft = {}
-rotateVectorRight = {}
 for move in moves:
     moveVector = GetVector[move]
     firstDest = addTouples(moveVector, robotPos)
