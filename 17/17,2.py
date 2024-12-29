@@ -6,7 +6,9 @@ program = data[1][9:].split(",")
 
 registerA = int(registers[0][12:])
 registerB = int(registers[1][12:])
+initalRB = registerB
 registerC = int(registers[2][12:])
+initalRC = registerC
 
 for lineIndex in range(len(program)):
     program[lineIndex] = int(program[lineIndex])
@@ -65,9 +67,27 @@ def cdv(opp):
     registerC = registerA // (2**comboVal)
 getFunct = [adv, bxl, bst, jnz, bxc, out, bdv, cdv]
 
-while headIndex < len(program):
-    funk = getFunct[program[headIndex]]
-    opp = program[headIndex+1]
-    funk(opp)
-    headIndex = headIndex + 2
-print(outPut)
+firstVal = None
+for regAval in range(2000000):
+    registerA = regAval
+    registerB = initalRB
+    registerC = initalRC
+    headIndex = 0
+    outPut = []
+    while headIndex < len(program):
+        funk = getFunct[program[headIndex]]
+        opp = program[headIndex+1]
+        funk(opp)
+        headIndex = headIndex + 2
+    found = len(outPut) == len(program)
+    if found:
+        for elemIndex in range(len(outPut)):
+            if outPut[elemIndex] != program[elemIndex]:
+                found = False
+        if found:
+            firstVal = regAval
+            break
+
+                
+
+print(firstVal)
